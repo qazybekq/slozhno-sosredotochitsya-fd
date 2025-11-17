@@ -2,3 +2,86 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --font-family: 'IBM Plex mono', monospace;
+  --font-size: 18px;
+  --line-height: 23.4px;
+
+  /* Light theme colors */
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --decor-color: #353430;
+  --section-title-bg: #ff8dcb;
+  --section-title-text: #353430;
+  --card-title-text: #353430;
+  --card-text: #353430;
+  --rec-color: #ff0070;
+  --rec-text-color: #ffc2e6;
+  --rec-bg-color: #353430;
+  --rec-dot-color: #ffc2e6;
+  --cover-image: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --text-color: #f1b2ce;
+    --accent-color: #ff0070;
+    --title-color: #db00ff;
+    --title-shadow: #ff0070;
+    --decor-color: #ff0070;
+    --section-title-bg: #ff0070;
+    --section-title-text: #000028;
+    --card-title-text: #ff0070;
+    --card-text: #f1b2ce;
+    --rec-color: #ff0070;
+    --rec-text-color: #ff0070;
+    --rec-bg-color: transparent;
+    --rec-dot-color: #ff0070;
+    --cover-image: url(../images/cover-image-dark.png);
+  }
+
+  .header__rec {
+    display: flex;
+  }
+}
+
+:root.theme-dark {
+  --bg-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --title-shadow: #ff0070;
+  --decor-color: #ff0070;
+  --section-title-bg: #ff0070;
+  --section-title-text: #000028;
+  --card-title-text: #ff0070;
+  --card-text: #f1b2ce;
+  --rec-color: #ff0070;
+  --rec-text-color: #ff0070;
+  --rec-bg-color: transparent;
+  --rec-dot-color: #ff0070;
+  --cover-image: url(../images/cover-image-dark.png);
+}
+
+:root.theme-light {
+  --bg-color: #fff1f7;
+  --text-color: #353430;
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --decor-color: #353430;
+  --section-title-bg: #ff8dcb;
+  --section-title-text: #353430;
+  --card-title-text: #353430;
+  --card-text: #353430;
+  --rec-color: #ff0070;
+  --rec-text-color: #ffc2e6;
+  --rec-bg-color: #353430;
+  --rec-dot-color: #ffc2e6;
+  --cover-image: url(../images/cover-image-light.png);
+}
